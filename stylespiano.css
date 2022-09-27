@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+p {
+  margin: 10px;
+}
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #ccc;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
+
+.text {
+  color: black;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+  color: white;
+  top: 0;
+  position: absolute;
+  position: sticky;
+  z-index: 100;
+  padding: 0%;
+  width: 100%;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  /* border-radius: 0px; */
+}
+
+.header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}

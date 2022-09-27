@@ -1,0 +1,149 @@
+* {box-sizing: border-box;}
+
+header {
+  background-color: white;
+}
+
+body { 
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
+}
+
+footer {
+  background-color: black;
+  max-width:  100%;
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.introduccion {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.introduccion p {
+  margin-bottom: 30px;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: gray;
+  font-size: 20px;
+  color: black;
+}
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+  color: white;
+  top: 0;
+  position: absolute;
+  position: sticky;
+  z-index: 100;
+  padding: 0%;
+
+
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+}
+
+.header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  background-color: gray;
+}
+
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.contenedor img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.titulo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Tahoma;
+  font-size: 120px;
+  font-weight: 100;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+
+}
+
+.column {
+  flex: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  line-height:0;
+}
+
+.column .titulo {
+  width: 100%;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.column .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.column .btn:hover {
+  background-color: black;
+}
